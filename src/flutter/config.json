@@ -1,7 +1,7 @@
 {
-  "flutter-separate": {
+  "flutter": {
     "transforms": ["attribute/cti", "name/ti/camel", "size/flutter/remToDouble", "content/flutter/literal", "asset/flutter/literal", "font/flutter/literal", "colors/hex8", "typography/flutter/shorthand"],
-    "buildPath": "_build/flutter/Classes/",
+    "buildPath": "_build/flutter/",
     "prefix": "ds",
     "files": [
       {
@@ -11,7 +11,7 @@
         "type": "color",
         "filter": "filter-common-color",
         "options": {
-          "fileHeader": "myCustomHeader"
+          "fileHeader": "fileCommentsHeader"
         }
       },
       {
@@ -21,7 +21,7 @@
         "type": "typography",
         "filter": "filter-flutter-font",
         "options": {
-          "fileHeader": "myCustomHeader"
+          "fileHeader": "fileCommentsHeader"
         }
       }
     ]

@@ -36,7 +36,7 @@ module.exports = {
                     let textCase = value.textCase // 'none'
                     let textDecoration = value.textDecoration // 'none'
 
-                    if (fontWeight == "Bold") {
+                    if (fontWeight === "Bold") {
                         fontWeight = 'FontWeight.bold'
                     } else {
                         fontWeight = 'FontWeight.normal'
@@ -54,8 +54,6 @@ module.exports = {
                 } else {
                     allTokens = [...dictionary.allTokens].sort(sortByName)
                 }
-
-                console.log('allTokens', allTokens)
 
                 return template({allTokens, file, options, formatProperty, fileHeader});
             }

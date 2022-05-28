@@ -1,76 +1,27 @@
 {
-  "ios": {
-    "transformGroup": "ios",
-    "buildPath": "_build/ios/Classes/Generated/",
-    "prefix": "StyleDictionary",
-    "files": [{
-      "destination": "StyleDictionarySize.h",
-      "format": "ios/static.h",
-      "type": "float",
-      "className": "StyleDictionarySize",
-      "filter": {
-        "attributes": {
-          "category": "size"
+  "ios-swift": {
+    "transforms": [
+      "attribute/cti",
+      "name/ti/camel",
+      "color/UIColorSwift",
+      "content/swift/literal",
+      "asset/swift/literal",
+      "size/swift/remToCGFloat",
+      "font/swift/literal"
+    ],
+    "buildPath": "_build/ios/swift/",
+    "prefix": "ds",
+    "files": [
+      {
+        "destination": "DesignSystemColor.swift",
+        "format": "ios-swift/enum.swift",
+        "className": "DesignSystemColor",
+        "type": "color",
+        "filter": "filter-common-color",
+        "options": {
+          "fileHeader": "fileCommentsHeader"
         }
       }
-    },{
-      "destination": "StyleDictionarySize.m",
-      "format": "ios/static.m",
-      "type": "float",
-      "className": "StyleDictionarySize",
-      "filter": {
-        "attributes": {
-          "category": "size"
-        }
-      }
-    },{
-      "destination": "StyleDictionaryIcons.h",
-      "format": "ios/strings.h",
-      "className": "StyleDictionaryIcons",
-      "filter": {
-        "attributes": {
-          "category": "content",
-          "type": "icon"
-        }
-      }
-    },{
-      "destination": "StyleDictionaryIcons.m",
-      "format": "ios/strings.m",
-      "className": "StyleDictionaryIcons",
-      "filter": {
-        "attributes": {
-          "category": "content",
-          "type": "icon"
-        }
-      }
-    },{
-      "destination": "StyleDictionaryColor.h",
-      "format": "ios/colors.h",
-      "className": "StyleDictionaryColor",
-      "type": "StyleDictionaryColorName",
-      "filter": {
-        "attributes": {
-          "category": "color"
-        }
-      }
-    },{
-      "destination": "StyleDictionaryColor.m",
-      "format": "ios/colors.m",
-      "className": "StyleDictionaryColor",
-      "type": "StyleDictionaryColorName",
-      "filter": {
-        "attributes": {
-          "category": "color"
-        }
-      }
-    },{
-      "destination": "StyleDictionaryProperties.h",
-      "format": "ios/singleton.h",
-      "className": "StyleDictionaryProperties"
-    },{
-      "destination": "StyleDictionaryProperties.m",
-      "format": "ios/singleton.m",
-      "className": "StyleDictionaryProperties"
-    }]
+    ]
   }
 }

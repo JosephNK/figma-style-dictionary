@@ -2,7 +2,8 @@ const StyleDictionary = require('style-dictionary')
 const baseConfig = require('./config.json')
 
 const { registerFilters, registerFormats, registerFileHeader, registerTransforms  } = require('./src/common/build')
-const { configIOS } = require('./src/ios/build')
+const { configSCSS } = require('./src/scss/build')
+const { configIOS, registerTransformsIosSwift } = require('./src/ios/build')
 const { configAndorid } = require('./src/android/build')
 const { configFlutter, registerFiltersFlutter, registerFormatsFlutter, registerTransformsFlutter } = require('./src/flutter/build')
 
@@ -15,6 +16,9 @@ registerFormats()
 registerFileHeader()
 registerTransforms()
 
+/// iOS
+registerTransformsIosSwift()
+
 /// Flutter
 registerFiltersFlutter()
 registerFormatsFlutter()
@@ -24,6 +28,7 @@ StyleDictionary.extend({
     source: baseConfig.source,
     platforms: {
         ...baseConfig.platforms,
+        ...configSCSS,
         ...configIOS,
         ...configAndorid,
         ...configFlutter

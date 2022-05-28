@@ -3,19 +3,19 @@
     "transformGroup": "android",
     "buildPath": "_build/android/styledictionary/src/main/res/values/",
     "files": [{
-      "destination": "style_dictionary_colors.xml",
+      "destination": "design_system_colors.xml",
       "format": "android/colors"
     },{
-      "destination": "style_dictionary_font_dimens.xml",
+      "destination": "design_system_font_dimens.xml",
       "format": "android/fontDimens"
     },{
-      "destination": "style_dictionary_dimens.xml",
+      "destination": "design_system_dimens.xml",
       "format": "android/dimens"
     },{
-      "destination": "style_dictionary_integers.xml",
+      "destination": "design_system_integers.xml",
       "format": "android/integers"
     },{
-      "destination": "style_dictionary_strings.xml",
+      "destination": "design_system_strings.xml",
       "format": "android/strings"
     }]
   }

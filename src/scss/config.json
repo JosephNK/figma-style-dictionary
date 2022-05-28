@@ -1,0 +1,16 @@
+{
+  "scss": {
+    "transformGroup": "scss",
+    "buildPath": "_build/scss/",
+    "prefix": "ds",
+    "files": [{
+      "destination": "design-system-color.scss",
+      "format": "scss/variables",
+      "type": "color",
+      "filter": "filter-common-color",
+      "options": {
+        "fileHeader": "fileCommentsHeader"
+      }
+    }]
+  }
+}
