@@ -1,0 +1,29 @@
+{
+  "flutter-separate": {
+    "transforms": ["attribute/cti", "name/ti/camel", "size/flutter/remToDouble", "content/flutter/literal", "asset/flutter/literal", "font/flutter/literal", "colors/hex8", "typography/flutter/shorthand"],
+    "buildPath": "_build/flutter/Classes/",
+    "prefix": "ds",
+    "files": [
+      {
+        "destination": "design_system_color.dart",
+        "format": "flutter/class.dart",
+        "className": "DesignSystemColor",
+        "type": "color",
+        "filter": "filter-common-color",
+        "options": {
+          "fileHeader": "myCustomHeader"
+        }
+      },
+      {
+        "destination": "design_system_typography.dart",
+        "format": "flutter/typography",
+        "className": "DesignSystemTypography",
+        "type": "typography",
+        "filter": "filter-flutter-font",
+        "options": {
+          "fileHeader": "myCustomHeader"
+        }
+      }
+    ]
+  }
+}

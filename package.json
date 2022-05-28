@@ -1,0 +1,17 @@
+{
+  "name": "figma-style-dictionary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "build": "bash build.sh"
+  },
+  "author": "JosephNK",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@divriots/style-dictionary-to-figma": "^0.2.0",
+    "app-root-path": "^3.0.0",
+    "style-dictionary": "latest",
+    "tinycolor2": "^1.4.2"
+  }
+}
