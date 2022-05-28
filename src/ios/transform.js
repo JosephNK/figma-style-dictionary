@@ -4,14 +4,14 @@ const Color = require("tinycolor2");
 module.exports = {
     registerTransformsIosSwift : function () {
         StyleDictionary.registerTransform({
-            name: 'color/UIColorSwift',
+            name: 'color/ios-swift/gen',
             type: 'value',
             transitive: true,
             matcher: token => {
                 return token.type === 'color'
             },
             transformer: (token) => {
-                const {value} = token
+                const { value } = token
                 const { r, g, b, a } = Color(value).toRgb();
                 const rFixed = (r / 255.0).toFixed(3);
                 const gFixed = (g / 255.0).toFixed(3);

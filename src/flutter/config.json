@@ -1,6 +1,15 @@
 {
   "flutter": {
-    "transforms": ["attribute/cti", "name/ti/camel", "size/flutter/remToDouble", "content/flutter/literal", "asset/flutter/literal", "font/flutter/literal", "colors/hex8", "typography/flutter/shorthand"],
+    "transforms": [
+      "attribute/cti",
+      "name/ti/camel",
+      "size/flutter/remToDouble",
+      "content/flutter/literal",
+      "asset/flutter/literal",
+      "font/flutter/literal",
+      "colors/hex8",
+      "typography/flutter/gen"
+    ],
     "buildPath": "_build/flutter/",
     "prefix": "ds",
     "files": [

@@ -1,7 +1,17 @@
 const fs = require('fs');
 const __appRootPath = require('app-root-path').path
 const __styleDictionaryLibCommonPath = __appRootPath + '/node_modules/style-dictionary/lib/common';
-const { fileHeader, formattedVariables, getTypeScriptType, iconsWithPrefix, minifyDictionary, sortByReference, createPropertyFormatter, sortByName, setSwiftFileProperties } = require(__styleDictionaryLibCommonPath + '/formatHelpers');
+const {
+    fileHeader,
+    formattedVariables,
+    getTypeScriptType,
+    iconsWithPrefix,
+    minifyDictionary,
+    sortByReference,
+    createPropertyFormatter,
+    sortByName,
+    setSwiftFileProperties
+} = require(__styleDictionaryLibCommonPath + '/formatHelpers');
 const _template = require('lodash/template');
 const StyleDictionary = require('style-dictionary')
 

@@ -1,11 +1,32 @@
 const StyleDictionary = require('style-dictionary')
 const baseConfig = require('./config.json')
 
-const { registerFilters, registerFormats, registerFileHeader, registerTransforms  } = require('./src/common/build')
-const { configSCSS } = require('./src/scss/build')
-const { configIOS, registerTransformsIosSwift } = require('./src/ios/build')
-const { configAndorid } = require('./src/android/build')
-const { configFlutter, registerFiltersFlutter, registerFormatsFlutter, registerTransformsFlutter } = require('./src/flutter/build')
+const {
+    registerFilters,
+    registerFormats,
+    registerFileHeader,
+    registerTransforms
+} = require('./src/common/build')
+
+const {
+    configSCSS
+} = require('./src/scss/build')
+
+const {
+    configIOS,
+    registerTransformsIosSwift
+} = require('./src/ios/build')
+
+const {
+    configAndorid
+} = require('./src/android/build')
+
+const {
+    configFlutter,
+    registerFiltersFlutter,
+    registerFormatsFlutter,
+    registerTransformsFlutter
+} = require('./src/flutter/build')
 
 console.log('Build started...')
 console.log('\n==============================================')
