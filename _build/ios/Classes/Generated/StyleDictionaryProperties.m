@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Sat, 28 May 2022 16:17:00 GMT
+// Generated on Sat, 28 May 2022 16:19:03 GMT
 
 
 #import "StyleDictionaryProperties.h"
