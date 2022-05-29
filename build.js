@@ -9,7 +9,9 @@ const {
 } = require('./src/common/build')
 
 const {
-    configSCSS
+    configSCSS,
+    registerFiltersSCSS,
+    registerTransformsSCSS
 } = require('./src/scss/build')
 
 const {
@@ -36,6 +38,10 @@ registerFilters()
 registerFormats()
 registerFileHeader()
 registerTransforms()
+
+/// SCSS
+registerFiltersSCSS()
+registerTransformsSCSS()
 
 /// iOS
 registerTransformsIosSwift()
